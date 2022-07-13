@@ -9,6 +9,10 @@ body {
     background: salmon;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 .header {
     display: flex;
@@ -27,6 +31,37 @@ body {
 .nav-list-item {
     text-decoration: none;
 }
+
+/* Project styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 60vh;
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid black;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.project-container:hover {
+    transform: translatey(-1%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.project-img {
+    max-width: 200px;
+}
+
 
 .footer {
     position: absolute;

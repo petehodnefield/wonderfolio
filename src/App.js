@@ -2,6 +2,7 @@ import './App.css';
 import './styles.css'
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
+import Project from '../src/components/Project'
 
 function App() {
   return (
@@ -10,8 +11,10 @@ function App() {
         <Header>
         </Header>
       </header>
-        <h1> Hi MOM</h1>
       <main>
+        <section>
+          <Project></Project>
+        </section>
         <Footer></Footer>
       </main> 
     </div>
