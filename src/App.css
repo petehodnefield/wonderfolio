@@ -1,7 +1,12 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 
+html, body, #root, #root>div
+ {
+  width: 100%;
+ }
 .App-logo {
   height: 40vmin;
   pointer-events: none;

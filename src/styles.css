@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    color: white;
+    background: salmon;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;  
+    padding: 0;  
+;}
+
+.nav-list-item {
+    text-decoration: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
