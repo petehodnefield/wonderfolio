@@ -1,15 +1,19 @@
 import React, {useState} from 'react'
 import Nav from '../Nav'
 
-function Header() {
-    const [categories] = useState([
-        {name: 'About Me'},
-        {name: 'Portfolio'},
-        {name: 'Resume'},
-    ])
-    const [contactSelected, setContactSelected] = useState(false)
+function Header(props) {
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory,
+        contactSelected,
+        setContactSelected,
+        resumeSelected,
+        setResumeSelected,
+        aboutSelected,
+        setAboutSelected
+      } = props
 
-    const [currentCategory, setCurrentCategory] = useState(categories[0])
     return (
         <div className='header'>
             <h1>Pete Hodnefield</h1>
@@ -19,6 +23,8 @@ function Header() {
                 setCurrentCategory={setCurrentCategory}
                 contactSelected={contactSelected}
                 setContactSelected={setContactSelected}
+                resumeSelected={resumeSelected}
+                setResumeSelected={setResumeSelected}
             ></Nav>
         </div>
 
