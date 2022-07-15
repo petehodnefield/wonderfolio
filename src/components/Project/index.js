@@ -50,14 +50,15 @@ function Project() {
             <div className='grid'>
               {projects.map(project => (
                 <div className='project-container'>
-                <h3 className='project-title'>{project.name}</h3>
+                <h3 key={project.name} className='project-title'>{project.name}</h3>
                 <img
                     src={project.image}
                     alt="a photo of yaya"
                     className='project-img'
+                    key={project.name}
                 />
-                <a className='project-links' href={project.github} target='_blank'>GitHub</a>
-                <a className='project-links' href={project.liveDeployment} target='_blank'>Deployment</a>
+                <a className='project-links'key={project.github} href={project.github} target='_blank'>GitHub</a>
+                <a className='project-links' key={project.liveDeployment} href={project.liveDeployment} target='_blank'>Deployment</a>
                 </div>
               ))}
             </div>

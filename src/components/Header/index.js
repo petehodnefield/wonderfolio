@@ -6,12 +6,6 @@ function Header(props) {
         categories = [],
         setCurrentCategory,
         currentCategory,
-        contactSelected,
-        setContactSelected,
-        resumeSelected,
-        setResumeSelected,
-        aboutSelected,
-        setAboutSelected
       } = props
 
     return (
@@ -20,11 +14,7 @@ function Header(props) {
             <Nav          
                 categories={categories}
                 currentCategory={currentCategory}
-                setCurrentCategory={setCurrentCategory}
-                contactSelected={contactSelected}
-                setContactSelected={setContactSelected}
-                resumeSelected={resumeSelected}
-                setResumeSelected={setResumeSelected}
+                setCurrentCategory={setCurrentCategory} 
             ></Nav>
         </div>
 

@@ -1,15 +1,17 @@
 import React from 'react'
 
-function ContactForm() {
+function Contact() {
     return (
-        <div>
-            <form>
+        <section className='yaya'>
+            <h2 className='section-header'>Contact Me</h2>
+            <form id='contact-form'>
                 <input>Your Name</input>
                 <label>Hi there</label>
+                <button type='submit'>Submit</button>
             </form>
-        </div>
+        </section>
     )
 }
 
 
-export default ContactForm
+export default Contact

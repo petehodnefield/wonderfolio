@@ -8,24 +8,34 @@ function Footer() {
         <div className='footer'>
             <ul className='footer-list'>
                 <li>
-                    <img 
-                        src={githubIcon}
-                        className='icon'
-                    />
+                    <div class="icon-container">
+                        <a className='icon-anchor' href="https://github.com/petehodnefield" target="_blank">
+                            <img
+                                src={githubIcon}
+                                className='icon'
+                            />
+                        </a>
+                    </div>
                 </li>
                 <li>
-                    <img 
-                        src={linkedInIcon}
-                        className='icon'
-
-                    />
+                    <div class="icon-container">
+                        <a className='icon-anchor' href="https://www.linkedin.com/in/petehodnefield/" target="_blank">
+                            <img
+                                src={linkedInIcon}
+                                className='icon'
+                            />
+                        </a>
+                    </div>
                 </li>
                 <li>
-                    <img 
-                        src={emailIcon}
-                        className='icon'
-
-                    />
+                    <div class="icon-container flex">
+                        <a className='icon-anchor' href="mailto:pete.hod1@gmail.com">
+                            <img
+                                src={emailIcon}
+                                className='icon'
+                            />
+                        </a>
+                    </div>
                 </li>
               
 

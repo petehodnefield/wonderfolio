@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.yaya {
+    background: red;
+}
+
 .heart {
     height: 100px;
 }
@@ -19,6 +23,7 @@ body {
     display: flex;
     color: var(--white);
     background: var(--primary);
+    text-align: center;
 }
 
 a {
@@ -36,6 +41,12 @@ h1 {
     padding: 2rem;
     text-align: center;
     margin-top: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-header {
@@ -165,10 +176,21 @@ h1 {
     justify-content: center;
     padding: 1rem;
 }
-
+.icon-container:hover {
+    background-color: pink;
+    border-radius: 20px;
+    transition: .4s;
+}
 .icon {
-    height: 50px;
+    height: 75px;
     margin-left: 2rem;
+    
+    fill: pink;
+    margin: 0;
+}
+
+.icon:hover {
+    font-size: 20rem;
 }
 
 

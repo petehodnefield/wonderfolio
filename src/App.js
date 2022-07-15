@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
 import Project from '../src/components/Project'
-import ContactForm from '../src/components/Contact'
+import Contact from '../src/components/Contact'
 import Resume from '../src/components/Resume'
 import About from '../src/components/About'
 
@@ -21,7 +21,6 @@ function App() {
   // const [resumeSelected, setResumeSelected] = useState(false)
   // const [aboutSelected, setAboutSelected] = useState(false)
   const [currentCategory, setCurrentCategory] = useState(categories[0])
-  console.log(currentCategory)
 
   function renderComponent() {
     if(currentCategory.name === "Portfolio") {
@@ -34,7 +33,7 @@ function App() {
       return <Resume></Resume>
     }
     else if(currentCategory.name === "Contact") {
-      return <ContactForm></ContactForm>
+      return <Contact></Contact>
     }
 
   }
