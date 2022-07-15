@@ -5,7 +5,6 @@ function Header() {
     const [categories] = useState([
         {name: 'About Me'},
         {name: 'Portfolio'},
-        {name: 'Contact'},
         {name: 'Resume'},
     ])
     const [contactSelected, setContactSelected] = useState(false)
