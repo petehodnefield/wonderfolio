@@ -60,17 +60,26 @@ h1 {
     font-size: 1.7rem;
 }
 
-.nav-list-item a {
+.nav-list-item-span {
     color: var(--secondary);
     padding: .2rem 3rem;
 }
 
-.nav-list-item a:hover {
+.nav-list-item-span:hover {
     color: var(--primary);
-    background: var(--white);
     border-radius: 15px;
-    transition: .2s;
+
 }
+
+.Snav-active {
+    background-color: var(--primary);    
+    border-radius: 20px;
+}
+
+.Snav-active .nav-list-item-span {
+    color: var(--white);
+}
+
 
 /* Project styles */
 .grid-container {

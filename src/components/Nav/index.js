@@ -1,12 +1,30 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
-function Nav() {
+function Nav(props) {
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory,
+        contactSelected,
+        setContactSelected
+    } = props
+
+    useEffect(() => {
+        document.title = currentCategory.name
+    }) 
     return(
         <ul className='nav-list'>
-            <li className='nav-list-item'><a href="#about">About Me</a></li>
-            <li className='nav-list-item'><a href="#portfolio">Portfolio</a></li>
-            <li className='nav-list-item'><a href="#contact">Contact</a></li>
-            <li className='nav-list-item'><a href="#resume">Resume</a></li>
+            {categories.map((category) => (
+                    <li className={`mx-1 nav-list-item S${
+                        currentCategory.name === category.name && !contactSelected && 'nav-active' }`}
+                        key={category.name} >
+                        <span className='nav-list-item-span' onClick={() => {
+                            setCurrentCategory(category)
+                            setContactSelected(false)}}>
+                            {category.name}
+                        </span>
+                    </li>
+                ))}
         </ul>
     )
 }
