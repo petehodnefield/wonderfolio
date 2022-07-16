@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/wonderfolio/static/css/main.5bd59911.css",
+    "main.js": "/wonderfolio/static/js/main.4c94ce81.js",
+    "static/js/787.34d48d9b.chunk.js": "/wonderfolio/static/js/787.34d48d9b.chunk.js",
+    "static/media/about-monger.jpg": "/wonderfolio/static/media/about-monger.613f5e8fd6489a9a5890.jpg",
+    "static/media/headshot.jpg": "/wonderfolio/static/media/headshot.efcc33f2a62ddf0b5532.jpg",
+    "static/media/beat-store.jpg": "/wonderfolio/static/media/beat-store.a1585d455d7ae90a4d38.jpg",
+    "static/media/nba-img.jpg": "/wonderfolio/static/media/nba-img.8a215667215e7dcc38d3.jpg",
+    "static/media/unleashed.jpg": "/wonderfolio/static/media/unleashed.f4d3743713cf7137a4bb.jpg",
+    "static/media/weather-img.jpg": "/wonderfolio/static/media/weather-img.e45da73463aa04327c49.jpg",
+    "static/media/note-taker.jpg": "/wonderfolio/static/media/note-taker.f3d46f5e6ff3905b858d.jpg",
+    "static/media/PeteHodnefieldResume.pdf": "/wonderfolio/static/media/PeteHodnefieldResume.e695214a7fb31a77f4e0.pdf",
+    "static/media/logo-github.svg": "/wonderfolio/static/media/logo-github.080591513b1a3eb8fdfe0257830eaff1.svg",
+    "index.html": "/wonderfolio/index.html",
+    "static/media/logo-linkedin.svg": "/wonderfolio/static/media/logo-linkedin.9ab1461c9a828786baf729f786e1c2f3.svg",
+    "static/media/mail-outline.svg": "/wonderfolio/static/media/mail-outline.413850824ff29c4ae80df43a973302dc.svg",
+    "main.5bd59911.css.map": "/wonderfolio/static/css/main.5bd59911.css.map",
+    "main.4c94ce81.js.map": "/wonderfolio/static/js/main.4c94ce81.js.map",
+    "787.34d48d9b.chunk.js.map": "/wonderfolio/static/js/787.34d48d9b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bd59911.css",
+    "static/js/main.4c94ce81.js"
+  ]
+}
