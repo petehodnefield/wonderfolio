@@ -253,6 +253,10 @@ h1 {
         color: var(--white);
     }
 
+    .error-text {
+        font-size: 2rem;
+    }
+
 /* Contact style end */
 
 /* Footer style begin */
