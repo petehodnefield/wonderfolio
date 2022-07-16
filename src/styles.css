@@ -24,6 +24,14 @@ body {
     color: var(--white);
     background: var(--primary);
     text-align: center;
+    height: 100vh;
+}
+
+#root {
+    position: relative;
+}
+.master-container {
+    position: relative;
 }
 
 a {
@@ -178,12 +186,44 @@ h1 {
     background-color: var(--secondary);
 }
 
+/* Resume style begin */
 
+.proficiencies-container {
+    text-align: left;
+    padding-left: 3rem;
+}
+.proficiencies-header {
+    text-shadow: 0px 0px 2px var(--secondary);
+    font-size: 2.1rem;
+
+}
+.proficiencies-list {
+    padding: 0;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.proficiencies-list-item {
+    font-size: 1.7rem;
+    padding: .2rem 0;
+}
+
+.download-btn {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* Footer style begin */
 .footer {
     background-color: var(--white);
     color: var(--secondary);
     text-align: center;
     width: 100%;
+    position: relative;
+    margin-top: 2rem;
+    height: 8rem;
+    bottom: 0;
+    left: 0;
 }
 
 .footer-list {

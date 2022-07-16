@@ -39,7 +39,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='master-container'>
       <header>
         <Header
           categories={categories}
@@ -50,8 +50,9 @@ function App() {
       </header>
       <main>
         {renderComponent()}
-        <Footer></Footer>
       </main> 
+      <Footer></Footer>
+
     </div>
     
   );
