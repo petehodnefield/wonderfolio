@@ -1,14 +1,22 @@
 import React from 'react'
+import pete from '../../assets/images/headshot.jpg'
 
 
 function About() {
     return (
         <div>
             <h2 className='section-header'>About Me</h2>
-            <p className='text'>My name is Pete. I am studying full-stack web development through the 
-                University of Minnesota. I am a former student of the Berklee School of Music in Boston where I studied Audio Engineering.
-                I vision is to combine my love of coding and music together.
-            </p>
+            <div class="container">
+                <img
+                    src={pete}
+                    alt='A photo of Pete Hodnefield'
+                    className='pete-img'
+                />
+                <p className='about-text'>
+Front-end web developer utilizing a background in Audio Engineering and Psychology to help build practical applications and services for musicians. Currently earning a certificate in full stack web development through the University of Minnesota coding bootcamp. Skills in HTML, CSS, & JavaScript, as well as extensive knowledge in the Digital Audio Workstations Ableton Live and FL Studio. Previously studied Audio Engineering at the prestigious Berklee School of Music in Boston and Psychology at the University of Minnesota - Twin Cities. A chronic learner who is passionate about teaching others along the way.
+
+                </p>
+            </div>
         </div>
     )
 }

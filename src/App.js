@@ -20,7 +20,7 @@ function App() {
   // const [contactSelected, setContactSelected] = useState(false)
   // const [resumeSelected, setResumeSelected] = useState(false)
   // const [aboutSelected, setAboutSelected] = useState(false)
-  const [currentCategory, setCurrentCategory] = useState(categories[0])
+  const [currentCategory, setCurrentCategory] = useState(categories[1])
 
   function renderComponent() {
     if(currentCategory.name === "Portfolio") {
