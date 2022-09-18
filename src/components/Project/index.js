@@ -16,6 +16,8 @@ function Project() {
       liveDeployment: "https://github.com/petehodnefield/weather-dashboard",
       alt: "My project Weather Dashboard",
       technology: ["JavaScript", "CSS", "HTML", "OpenWeather API"],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     },
     {
       name: "NBA Song of the Year",
@@ -30,6 +32,8 @@ function Project() {
         "YouTube API",
         "Ball Don't Lie API",
       ],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     },
     {
       name: "Unleashed",
@@ -45,6 +49,8 @@ function Project() {
         "Express.js",
         "Handlebars",
       ],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     },
     {
       name: "All About Monger",
@@ -53,6 +59,8 @@ function Project() {
       liveDeployment: "https://all-about-monger.herokuapp.com/",
       alt: "My project All About Monger",
       technology: ["HTML"],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     },
     {
       name: "Producer Store",
@@ -61,6 +69,8 @@ function Project() {
       liveDeployment: "https://petehodnefield.github.io/beat-store/",
       alt: "My project Producer Store",
       technology: ["HTML", "JavasSript"],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     },
     {
       name: "Monga Note Taker",
@@ -69,6 +79,8 @@ function Project() {
       liveDeployment: "https://monga-note-taker.herokuapp.com/",
       alt: "My project Monga Note Taker",
       technology: ["Node.js", "Express.js"],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     },
   ]);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -82,39 +94,31 @@ function Project() {
 
   return (
     <div className="grid-container">
-      <h2 className="section-header">My Projects</h2>
+      <h2 className="section-header "> Projects</h2>
       <div className="grid">
         {isModalOpen && (
-          <Modal currentPhoto={currentPhoto} onClose={toggleModal} />
+          <Modal
+            currentPhoto={currentPhoto}
+            onClose={toggleModal}
+            isModalOpen={isModalOpen}
+          />
         )}
+
         {projects.map((project) => (
           <div
             className="project-container"
             onClick={() => toggleModal(project)}
             key={project.name}
           >
-            <h3 className="project-title">{project.name}</h3>
-            <img
-              src={project.image}
-              alt={project.alt}
-              className="project-img"
-            />
-            <a
-              className="project-links"
-              href={project.github}
-              rel="noreferrer"
-              target="_blank"
-            >
-              GitHub
-            </a>
-            <a
-              className="project-links"
-              href={project.liveDeployment}
-              rel="noreferrer"
-              target="_blank"
-            >
-              Deployment
-            </a>
+            <img src={project.image} className="project-background" />{" "}
+            <div className="project-contents">
+              <img
+                src={project.image}
+                alt={project.alt}
+                className="project-img"
+              />
+              <h3 className="project-title">{project.name}</h3>
+            </div>
           </div>
         ))}
       </div>

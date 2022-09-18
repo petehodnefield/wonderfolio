@@ -4,36 +4,24 @@ import React, { useState } from "react";
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 import Project from "../src/components/Project";
-import Contact from "../src/components/Contact";
-import Resume from "../src/components/Resume";
 import About from "../src/components/About";
+import Skills from "../src/components/Skills";
 
 function App() {
-  const [categories] = useState([
-    { name: "Portfolio" },
-    { name: "About Me" },
-    { name: "Resume" },
-    { name: "Contact" },
-  ]);
-
-  // const [contactSelected, setContactSelected] = useState(false)
-  // const [resumeSelected, setResumeSelected] = useState(false)
-  // const [aboutSelected, setAboutSelected] = useState(false)
-  const [currentCategory, setCurrentCategory] = useState(categories[1]);
-
   return (
     <div className="master-container">
       <header>
-        <Header
-          categories={categories}
-          setCurrentCategory={setCurrentCategory}
-          currentCategory={currentCategory}
-        ></Header>
+        <Header></Header>
       </header>
       <main>
-        <Project></Project>
+        <div className="section-container">
+          {" "}
+          <Project></Project>
+          <About></About>
+        </div>
+        <Skills></Skills>
+        <Footer></Footer>
       </main>
-      <Footer></Footer>
     </div>
   );
 }
