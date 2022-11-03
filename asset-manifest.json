@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wonderfolio/static/css/main.26c58420.css",
-    "main.js": "/wonderfolio/static/js/main.13a78208.js",
+    "main.js": "/wonderfolio/static/js/main.f0d56d9e.js",
     "static/js/787.34d48d9b.chunk.js": "/wonderfolio/static/js/787.34d48d9b.chunk.js",
     "static/media/about-monger.jpg": "/wonderfolio/static/media/about-monger.613f5e8fd6489a9a5890.jpg",
     "static/media/headshot.jpg": "/wonderfolio/static/media/headshot.efcc33f2a62ddf0b5532.jpg",
@@ -19,11 +19,11 @@
     "static/media/mail-outline.svg": "/wonderfolio/static/media/mail-outline.413850824ff29c4ae80df43a973302dc.svg",
     "static/media/hamburger.svg": "/wonderfolio/static/media/hamburger.cade3556e6c9b326d62302cf2b177af4.svg",
     "main.26c58420.css.map": "/wonderfolio/static/css/main.26c58420.css.map",
-    "main.13a78208.js.map": "/wonderfolio/static/js/main.13a78208.js.map",
+    "main.f0d56d9e.js.map": "/wonderfolio/static/js/main.f0d56d9e.js.map",
     "787.34d48d9b.chunk.js.map": "/wonderfolio/static/js/787.34d48d9b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.26c58420.css",
-    "static/js/main.13a78208.js"
+    "static/js/main.f0d56d9e.js"
   ]
 }
