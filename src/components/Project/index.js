@@ -5,6 +5,7 @@ import nba from "../../assets/images/nba-img.jpg";
 import beatStore from "../../assets/images/beat-store.jpg";
 import noteTaker from "../../assets/images/note-taker.jpg";
 import aboutMonger from "../../assets/images/about-monger.jpg";
+import weatherDemo from "../../assets/videos/weather-demo.mp4";
 import Modal from "../Modal";
 
 function Project() {
@@ -12,12 +13,13 @@ function Project() {
     {
       name: "Weather Dashboard",
       image: weather,
+      video: weatherDemo,
       github: "https://github.com/petehodnefield/weather-dashboard",
       liveDeployment: "https://github.com/petehodnefield/weather-dashboard",
       alt: "My project Weather Dashboard",
       technology: ["JavaScript", "CSS", "HTML", "OpenWeather API"],
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "Weather Dashboard is a forecast app that allows the user to enter a city. Upon submission you are shown the current forecast, as well as the five-day forecast for that city. Weather Dashboard also remembers previous searches.",
     },
     {
       name: "NBA Song of the Year",
@@ -33,7 +35,7 @@ function Project() {
         "Ball Don't Lie API",
       ],
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "NBA Song of the Year allows the user to input a current NBA player and immediately get player stats such as their jersey number, current team, and draft year. They will also receive a YouTube video containing the most popular songs of that player's draft year.",
     },
     {
       name: "Unleashed",
@@ -50,37 +52,37 @@ function Project() {
         "Handlebars",
       ],
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "Unleashed is a place to connect and see if someone has seen your lost pet. Or if you have found an “unleashed” animal, you can look to this site to see if you can contact their owner.",
     },
     {
-      name: "All About Monger",
+      name: "DEI Calendar",
       image: aboutMonger,
       github: "https://github.com/petehodnefield/all-about-monger",
       liveDeployment: "https://all-about-monger.herokuapp.com/",
-      alt: "My project All About Monger",
+      alt: "My project DEI Calendar",
       technology: ["HTML"],
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "DEI Calendar is a place for employees to learn about upcoming cultural festivals and holidays to enable them to connect with each other to plan for celebrations. Employees / Users will be able to express their interest in participating in an event or celebration.",
     },
     {
-      name: "Producer Store",
+      name: "Producerfolio ",
       image: beatStore,
       github: "https://github.com/petehodnefield/beat-store",
       liveDeployment: "https://petehodnefield.github.io/beat-store/",
       alt: "My project Producer Store",
-      technology: ["HTML", "JavasSript"],
+      technology: ["React.js", "CSS", "HTML", "JavasSript", "Email.JS"],
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "This is the place where producers can access my royalty-free guitar loops. They can also request custom guitar work if they have a big enough audience.",
     },
     {
-      name: "Monga Note Taker",
+      name: "Meloroids",
       image: noteTaker,
       github: "https://github.com/petehodnefield/note-taker",
       liveDeployment: "https://monga-note-taker.herokuapp.com/",
       alt: "My project Monga Note Taker",
       technology: ["Node.js", "Express.js"],
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "Meloroids is a training service for producers looking to get better at creating melodies. It has a database which has analyzed the most popular chord progressions used by major artists.",
     },
   ]);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -117,6 +119,7 @@ function Project() {
                 alt={project.alt}
                 className="project-img"
               />
+
               <h3 className="project-title">{project.name}</h3>
             </div>
           </div>
