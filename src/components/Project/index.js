@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import weather from "../../assets/images/weather-img.jpg";
 import unleashed from "../../assets/images/unleashed.jpg";
 import nba from "../../assets/images/nba-img.jpg";
-import beatStore from "../../assets/images/beat-store.jpg";
-import noteTaker from "../../assets/images/note-taker.jpg";
+import producerStore from "../../assets/images/producer-img.jpg";
+import dei from "../../assets/images/dei-img.jpg";
 import aboutMonger from "../../assets/images/about-monger.jpg";
+
 import weatherDemo from "../../assets/videos/weather-demo.mp4";
+import meloroids from "../../assets/images/meloroids-img.jpg";
 import Modal from "../Modal";
 
 function Project() {
@@ -21,22 +23,7 @@ function Project() {
       description:
         "Weather Dashboard is a forecast app that allows the user to enter a city. Upon submission you are shown the current forecast, as well as the five-day forecast for that city. Weather Dashboard also remembers previous searches.",
     },
-    {
-      name: "NBA Song of the Year",
-      image: nba,
-      github: "https://github.com/Undisputed06/nba-song-of-the-year",
-      liveDeployment: "https://undisputed06.github.io/nba-song-of-the-year/",
-      alt: "My project NBA Song of the Year",
-      technology: [
-        "JavaScript",
-        "Bulma",
-        "HTML",
-        "YouTube API",
-        "Ball Don't Lie API",
-      ],
-      description:
-        "NBA Song of the Year allows the user to input a current NBA player and immediately get player stats such as their jersey number, current team, and draft year. They will also receive a YouTube video containing the most popular songs of that player's draft year.",
-    },
+
     {
       name: "Unleashed",
       image: unleashed,
@@ -56,31 +43,54 @@ function Project() {
     },
     {
       name: "DEI Calendar",
-      image: aboutMonger,
+      image: dei,
       github: "https://github.com/petehodnefield/all-about-monger",
       liveDeployment: "https://all-about-monger.herokuapp.com/",
       alt: "My project DEI Calendar",
-      technology: ["HTML"],
+      technology: ["CSS", "React.js", "Express.js", "Mongoose", "Node.js"],
       description:
         "DEI Calendar is a place for employees to learn about upcoming cultural festivals and holidays to enable them to connect with each other to plan for celebrations. Employees / Users will be able to express their interest in participating in an event or celebration.",
     },
     {
+      name: "NBA Song of the Year",
+      image: nba,
+      github: "https://github.com/Undisputed06/nba-song-of-the-year",
+      liveDeployment: "https://undisputed06.github.io/nba-song-of-the-year/",
+      alt: "My project NBA Song of the Year",
+      technology: [
+        "JavaScript",
+        "Bulma",
+        "HTML",
+        "YouTube API",
+        "Ball Don't Lie API",
+      ],
+      description:
+        "NBA Song of the Year allows the user to input a current NBA player and immediately get player stats such as their jersey number, current team, and draft year. They will also receive a YouTube video containing the most popular songs of that player's draft year.",
+    },
+    {
       name: "Producerfolio ",
-      image: beatStore,
+      image: producerStore,
       github: "https://github.com/petehodnefield/beat-store",
       liveDeployment: "https://petehodnefield.github.io/beat-store/",
       alt: "My project Producer Store",
-      technology: ["React.js", "CSS", "HTML", "JavasSript", "Email.JS"],
+      technology: ["CSS", "React.js", "Javasript", "Email.JS"],
       description:
         "This is the place where producers can access my royalty-free guitar loops. They can also request custom guitar work if they have a big enough audience.",
     },
     {
       name: "Meloroids",
-      image: noteTaker,
+      image: meloroids,
       github: "https://github.com/petehodnefield/note-taker",
       liveDeployment: "https://monga-note-taker.herokuapp.com/",
       alt: "My project Monga Note Taker",
-      technology: ["Node.js", "Express.js"],
+      technology: [
+        "CSS",
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "GraphQL",
+        "Mongoose",
+      ],
       description:
         "Meloroids is a training service for producers looking to get better at creating melodies. It has a database which has analyzed the most popular chord progressions used by major artists.",
     },
