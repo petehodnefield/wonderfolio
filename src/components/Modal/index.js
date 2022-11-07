@@ -13,12 +13,12 @@ function Modal({ onClose, currentPhoto, isModalOpen }) {
     >
       <div className="modalContainer">
         <h3 className="modalTitle">{name}</h3>
-        <img src={image} className="project-img" alt="current category" />
+        <img src={image} className="modal__img" alt="current category" />
         <p className="description-text">{description}</p>
-        <div className="list">
-          <h3>Technologies Used:</h3>
-          <div className="row">
-            <div className="grid tech-grid">
+        <div className="modal-wrapper">
+          <div className="list">
+            <h3 className="modal__subheader">Tech Used:</h3>
+            <div className=" tech-grid">
               {technology.map((project) => (
                 <li
                   className={`list-item ${
@@ -36,28 +36,30 @@ function Modal({ onClose, currentPhoto, isModalOpen }) {
               ))}
             </div>
           </div>
+          <div className="list">
+            <h3 className="modal__subheader">Sources:</h3>
+            <div className="links-wrapper full-width ">
+              <a
+                className="project-links"
+                href={github}
+                rel="noreferrer"
+                target="_blank"
+              >
+                GitHub
+              </a>
+              <a
+                className="project-links"
+                href={liveDeployment}
+                rel="noreferrer"
+                target="_blank"
+              >
+                Deployment
+              </a>
+            </div>
+          </div>
         </div>
-        <h3>Sources:</h3>
-        <div className="row full-width ">
-          <a
-            className="project-links"
-            href={github}
-            rel="noreferrer"
-            target="_blank"
-          >
-            GitHub
-          </a>
-          <a
-            className="project-links"
-            href={liveDeployment}
-            rel="noreferrer"
-            target="_blank"
-          >
-            Deployment
-          </a>
-        </div>
-        <button onClick={onClose} type="btn" className="btn close-btn">
-          Close
+        <button onClick={onClose} type="btn" className=" close-btn">
+          ❌
         </button>
       </div>
     </div>

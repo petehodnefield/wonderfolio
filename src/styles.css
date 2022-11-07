@@ -15,7 +15,7 @@ body {
     color: var(--white);
     text-align: center;
     margin: 0;
-    height: 100vh;
+    height: 100% ;
     color: white;
     text-align: center;
 font-family: 'Roboto', sans-serif;
@@ -51,10 +51,9 @@ h3 {
 }
 .list-item {
     max-width: 20rem;
-
+    min-width: 10rem;
     margin: 0.5rem;
     font-size: 1.4rem;
-    padding: 0.3rem;
     text-decoration: none;
     list-style: none;
     text-align: center;
@@ -63,13 +62,14 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 3rem;
 }
 li {
     width: 100%;
     height: 100%;
 }
-
+.wrapper {
+    width: 100%
+}
 .row {
     display: flex;
     align-items: center;
@@ -95,6 +95,7 @@ li {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
     align-items: center;
 }
 .underline {
@@ -215,6 +216,7 @@ main {
 /* Project styles */
 .grid-container {
     text-align: center;
+    width: 100%;
 }
 .grid {
     display: grid;
@@ -224,9 +226,20 @@ main {
     max-width: 100%;
     margin: 1rem 1rem 4rem;
     position: relative;
+  
 }
 .tech-grid {
-    margin: 0;
+    justify-items: center;
+    
+    align-items: center;
+    max-width: 50%;
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.3rem;
+    row-gap: 1.3rem;
+    max-width: 100%;
+    margin: 1rem 1rem 4rem;
+    position: relative;
 }
 
 .project-container {
@@ -286,32 +299,34 @@ main {
 
 .project-links {
     border-radius: 20px;
-    background: black;
+    background: var(--color-3);
     color: var(--white);
     padding: 0.5rem 4rem;
     font-size: 1.4rem;
     border: 2px solid var(--white);
     margin: 0.3rem 0;
     margin: 0 2rem 1rem;
+    width: 80%;
 }
 
 .project-links:hover {
     opacity: .7;
     background-color: var(--color-1);
-    transition: .4s;
+    transition: .4s ease-in;
 }
-
-/* Modal style begin */
 .modalBackdrop {
-    position: absolute;
+    position:  sticky;
+    overflow: scroll;
     width: 100%;
     transition: 1s;
     border-radius: 70px;
     border: 5px solid white;
     background: rgb(54,123,167);
-background: linear-gradient(0deg, rgba(54,123,167,1) 0%, rgba(102,100,103,1) 100%);
+    height: auto;
+
+    bottom: 0;
     z-index: 2;
-    backdrop-filter: blur(8px);
+    top: 0;
 }
 .modalOpen {
     animation: modal 0.2s ease-out both;
@@ -320,7 +335,7 @@ background: linear-gradient(0deg, rgba(54,123,167,1) 0%, rgba(102,100,103,1) 100
 .modalClose {
     animation: modalClose 0.2s ease-out both;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
+  transform: scale(0);
 }
 
 @keyframes modal {
@@ -348,12 +363,34 @@ background: linear-gradient(0deg, rgba(54,123,167,1) 0%, rgba(102,100,103,1) 100
     justify-content: flex-start;
     width: 100%;
     align-items: center;
+    overflow: hidden;
+    height: 100%;
     z-index: 3;
     
 }
+.modal-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+.modal__img {
+  max-width: 35%;
+  border-radius: 10px;
+}
+.links-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .modalTitle {
     padding: 2rem 0 1rem;
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 5vw, 6rem);
+}
+.modal__subheader {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
 }
 .description-text {
     padding: 1rem 4rem;
@@ -372,8 +409,6 @@ background: linear-gradient(0deg, rgba(54,123,167,1) 0%, rgba(102,100,103,1) 100
 }
 .list {
     width: 100%;
-    margin: 0 2rem;
-    margin-bottom: 2rem;
 }
 .proficiencies-list {
     padding: 0;
@@ -404,9 +439,15 @@ background: linear-gradient(0deg, rgba(54,123,167,1) 0%, rgba(102,100,103,1) 100
 }
 
 .close-btn {
+    position: absolute;
+    right: 30px;
     margin-bottom: 2rem;
     margin-top: 1.5rem;
-background-color: black;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 3rem;
 }
 
 /* Contact style begin */
@@ -578,11 +619,15 @@ label {
     .container {
         flex-direction: row;
     }
+    .modal-wrapper {
+        flex-direction: row;
+    }
 }
 @media screen and (min-width: 1200px) {
     .anchor-link {
         margin-left: 5rem;
     }
+ 
 }
 @media screen and (min-width: 1440px) {
     .grid {
@@ -595,7 +640,10 @@ label {
         margin-top: 1.5rem;
     }
     .grid-container {
-        width: 45%;
+        width: 100%;
+    }
+    .wrapper {
+      width: 45%;
     }
     .about-container {
         width: 45%;
@@ -605,5 +653,8 @@ label {
     }
     .anchor-link {
         margin-left: 12rem;
+    }
+    .modal-wrapper {
+        flex-direction: column;
     }
 }

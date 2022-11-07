@@ -105,35 +105,37 @@ function Project() {
   console.log("currentPhoto", currentPhoto);
 
   return (
-    <div className="grid-container">
-      <h2 className="section-header "> Projects</h2>
-      <div className="grid">
-        {isModalOpen && (
-          <Modal
-            currentPhoto={currentPhoto}
-            onClose={toggleModal}
-            isModalOpen={isModalOpen}
-          />
-        )}
+    <div className="wrapper">
+      {" "}
+      {isModalOpen && (
+        <Modal
+          currentPhoto={currentPhoto}
+          onClose={toggleModal}
+          isModalOpen={isModalOpen}
+        />
+      )}
+      <div className="grid-container">
+        <h2 className="section-header "> Projects</h2>
+        <div className="grid">
+          {projects.map((project) => (
+            <div
+              className="project-container"
+              onClick={() => toggleModal(project)}
+              key={project.name}
+            >
+              <img src={project.image} className="project-background" />{" "}
+              <div className="project-contents">
+                <img
+                  src={project.image}
+                  alt={project.alt}
+                  className="project-img"
+                />
 
-        {projects.map((project) => (
-          <div
-            className="project-container"
-            onClick={() => toggleModal(project)}
-            key={project.name}
-          >
-            <img src={project.image} className="project-background" />{" "}
-            <div className="project-contents">
-              <img
-                src={project.image}
-                alt={project.alt}
-                className="project-img"
-              />
-
-              <h3 className="project-title">{project.name}</h3>
+                <h3 className="project-title">{project.name}</h3>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
