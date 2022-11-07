@@ -15,7 +15,6 @@ function Project() {
     {
       name: "Weather Dashboard",
       image: weather,
-      video: weatherDemo,
       github: "https://github.com/petehodnefield/weather-dashboard",
       liveDeployment: "https://github.com/petehodnefield/weather-dashboard",
       alt: "My project Weather Dashboard",
@@ -44,8 +43,8 @@ function Project() {
     {
       name: "DEI Calendar",
       image: dei,
-      github: "https://github.com/petehodnefield/all-about-monger",
-      liveDeployment: "https://all-about-monger.herokuapp.com/",
+      github: "https://github.com/petehodnefield/project-three",
+      liveDeployment: "https://serene-mesa-60189.herokuapp.com/",
       alt: "My project DEI Calendar",
       technology: ["CSS", "React.js", "Express.js", "Mongoose", "Node.js"],
       description:
@@ -70,8 +69,8 @@ function Project() {
     {
       name: "Producerfolio ",
       image: producerStore,
-      github: "https://github.com/petehodnefield/beat-store",
-      liveDeployment: "https://petehodnefield.github.io/beat-store/",
+      github: "https://github.com/petehodnefield/beat-store-react",
+      liveDeployment: "https://petehodnefield.github.io/beat-store-react/",
       alt: "My project Producer Store",
       technology: ["CSS", "React.js", "Javasript", "Email.JS"],
       description:
@@ -80,8 +79,8 @@ function Project() {
     {
       name: "Meloroids",
       image: meloroids,
-      github: "https://github.com/petehodnefield/note-taker",
-      liveDeployment: "https://monga-note-taker.herokuapp.com/",
+      github: "https://github.com/petehodnefield/meloroids",
+      // liveDeployment: "https://monga-note-taker.herokuapp.com/",
       alt: "My project Monga Note Taker",
       technology: [
         "CSS",
@@ -92,7 +91,7 @@ function Project() {
         "Mongoose",
       ],
       description:
-        "Meloroids is a training service for producers looking to get better at creating melodies. It has a database which has analyzed the most popular chord progressions used by major artists.",
+        "Meloroids will be a training service for producers looking to get better at creating melodies. It will have a database which has analyzed the most popular chord progressions used by major artists.",
     },
   ]);
   const [isModalOpen, setIsModalOpen] = useState(false);

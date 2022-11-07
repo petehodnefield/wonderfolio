@@ -14,16 +14,16 @@ function About() {
             className="pete-img"
           />
           <p className="about-text">
-            Front-end web developer utilizing a background in Audio Engineering
+            Full-stack web developer utilizing a background in Audio Engineering
             and Psychology to help build practical applications and services for
-            musicians. Currently earning a certificate in full stack web
-            development through the University of Minnesota coding bootcamp.
-            Skills in HTML, CSS, & JavaScript, as well as extensive knowledge in
-            the Digital Audio Workstations Ableton Live and FL Studio.
-            Previously studied Audio Engineering at the prestigious Berklee
-            School of Music in Boston and Psychology at the University of
-            Minnesota - Twin Cities. A chronic learner who is passionate about
-            teaching others along the way.
+            musicians. Earned a certificate in full stack web development
+            through the University of Minnesota coding bootcamp. Skills in HTML,
+            CSS, & JavaScript, as well as extensive knowledge in the Digital
+            Audio Workstations Ableton Live and FL Studio. Previously studied
+            Audio Engineering at the prestigious Berklee School of Music in
+            Boston and Psychology at the University of Minnesota - Twin Cities.
+            A chronic learner who is passionate about teaching others along the
+            way.
           </p>
         </div>
       </div>

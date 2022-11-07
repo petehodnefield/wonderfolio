@@ -322,11 +322,9 @@ main {
     border-radius: 70px;
     border: 5px solid white;
     background: rgb(54,123,167);
-    height: auto;
 
-    bottom: 0;
     z-index: 2;
-    top: 0;
+    top: -50px;
 }
 .modalOpen {
     animation: modal 0.2s ease-out both;
